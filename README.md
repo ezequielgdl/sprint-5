@@ -1,6 +1,18 @@
 # Sprint5
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+In this project, we implemented a digital onboarding with Angular components to show different information in a reusable component. The information is served using a service.
+
+# Features
+
+The project uses two custom components: Home and Escena. Escena is a custom component that Inputs the data given by the Home component using a service called "steps".
+
+The buttons trigger a function that changes the currentSlide variable to show other information.
+There are also selectors created with an @for to show whatever amount of entries the phrasesList array contains. These selectors can be clicked to navigate to the desired slide.
+
+Animations are used by importing the provideAnimations() method to the app.config file and then importing the necessary methods to the Escena component.
+
+It uses Bootstrap for the CSS.
 
 ## Development server
 
