@@ -1,7 +1,22 @@
+.card {
+  margin: 3rem auto;
+  width: 18rem;
+}
+
+.card-body {
+  height: 200px;
+}
+
+img {
+  height: 300px;
+  border-radius: 32px 32px 0 0;
+}
+
 .btn {
   border-radius: 50%;
   background-color: black;
   color: white;
+  margin-right: 1rem;
 }
 
 .btn-left {
@@ -28,4 +43,10 @@ li.active {
   background-color: #2e2e2e;
   margin-right: 7px;
   cursor: pointer;
+}
+
+.footer {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { IStep } from '../i-step';
+import { trigger, transition, animate, style } from '@angular/animations';
 
 @Component({
   selector: 'app-escena',
@@ -7,6 +8,14 @@ import { IStep } from '../i-step';
   imports: [],
   templateUrl: './escena.component.html',
   styleUrl: './escena.component.css',
+  animations: [
+    trigger('slideAnimation', [
+      transition('* => *', [
+        style({ opacity: 0 }),
+        animate('700ms ease', style({ opacity: 1 })),
+      ]),
+    ]),
+  ],
 })
 export class EscenaComponent {
   @Input() phrasesList: IStep[] = [];
