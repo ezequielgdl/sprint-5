@@ -9,5 +9,21 @@ import { IStep } from '../i-step';
   styleUrl: './escena.component.css',
 })
 export class EscenaComponent {
-  @Input() phrasesList!: IStep[];
+  @Input() phrasesList: IStep[] = [];
+  currentSlide: number = 0;
+
+  nextSlide(): void {
+    if (this.phrasesList.length > this.currentSlide) {
+      this.currentSlide++;
+    }
+  }
+  prevSlide(): void {
+    if (this.currentSlide > 0) {
+      this.currentSlide--;
+    }
+  }
+
+  selectSlide(id: number): void {
+    this.currentSlide = id;
+  }
 }

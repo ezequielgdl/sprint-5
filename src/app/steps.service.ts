@@ -11,21 +11,21 @@ export class StepsService {
       description:
         'Un mínimo de 30 horas en la semana. Si no entiendes bastante, tendrás que dedicarle más horas. Al principio parece imposible, pero notarás una mejora rápidamente.',
       img: '/assets/time_managment.svg',
-      bgcolor: 'grey',
+      bgcolor: '#0d9ea6',
     },
     {
       title: 'Programa proyectos propios',
       description:
         'Más vale 10 horas trabajando en proyectos propios, que 10 horas mirando tutoriales. La motivación y la implicación en el proyecto ayudará a acelerar tu aprendizaje.',
       img: '/assets/programming.svg',
-      bgcolor: 'blue',
+      bgcolor: '#d5dbdb',
     },
     {
       title: 'Procura descansar',
       description:
         'Descansar bien y desconectar son vitales. De este modo reducirás el estrés y la ansiedad. Mejorarás tu concentración y consolidarás tu aprendizaje.',
       img: '/assets/meditation.svg',
-      bgcolor: 'yellow',
+      bgcolor: '#edc25c',
     },
   ];
   constructor() {}

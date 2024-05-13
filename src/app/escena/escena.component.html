@@ -1,7 +1,42 @@
-@for (phrase of phrasesList; track phrase.title) {
+<!-- @for (phrase of phrasesList; track phrase.title) {
 <img [src]="phrase.img" alt="photo" />
 <h2>{{ phrase.title }}</h2>
 <li>{{ phrase.description }}</li>
 } @empty {
 <li>There are no items.</li>
-}
+} -->
+
+<div class="card" style="width: 18rem">
+  <img
+    [src]="phrasesList[currentSlide].img"
+    [style.background-color]="phrasesList[currentSlide].bgcolor"
+    class="card-img-top py-5"
+    alt="phrase"
+  />
+  <div class="card-body m-2">
+    <h5 class="card-title">{{ phrasesList[currentSlide].title }}</h5>
+    <p class="card-text">
+      {{ phrasesList[currentSlide].description }}
+    </p>
+    @for (phrase of phrasesList; track $index) {
+    <li
+      [class.active]="$index === currentSlide"
+      (click)="selectSlide($index)"
+    ></li>
+    }
+    <button
+      class="btn btn-left"
+      (click)="prevSlide()"
+      [hidden]="currentSlide === 0"
+    >
+      <i class="bi bi-arrow-left"></i>
+    </button>
+    <button
+      class="btn btn-right"
+      [hidden]="currentSlide === phrasesList.length - 1"
+      (click)="nextSlide()"
+    >
+      <i class="bi bi-arrow-right"></i>
+    </button>
+  </div>
+</div>
