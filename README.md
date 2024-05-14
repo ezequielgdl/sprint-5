@@ -14,6 +14,38 @@ Animations are used by importing the provideAnimations() method to the app.confi
 
 It uses Bootstrap for the CSS.
 
+## Instructions
+
+Prerequisites
+
+Node.js and npm: Ensure you have Node.js and npm installed on your machine. You can download and install them from nodejs.org.
+Angular CLI: Install the Angular CLI globally using npm if you haven't already:
+
+`npm install -g @angular/cli`
+
+- Cloning the Repository
+
+1. Open Terminal/Command Prompt: Open your terminal or command prompt.
+
+2. Navigate to Your Desired Directory: Change the directory to where you want to clone the repository. For example:
+
+`cd path/to/your/directory`
+
+Clone the Repository: Use the git clone command followed by the URL of the repository. Replace repository-url with the actual URL of your Angular project's repository.
+
+`git clone repository-url`
+
+Navigate to the Project Directory: After cloning, navigate into the project directory.
+
+`cd name-of-cloned-repo`
+
+Installing Dependencies
+Install npm Packages: Run npm install to install all necessary dependencies specified in package.json.
+
+`npm install`
+
+Open the Project in a Code Editor: Open the cloned repository in your preferred code editor (e.g., VS Code, Sublime Text, etc.).
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
